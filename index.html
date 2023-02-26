@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+
+    <title>Student Registration Form </title>
+</head>
+<style>
+@media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+
+body
+{
+    height: 100vh;
+}
+
+.form-control
+{
+  width: 200px;
+ 
+}
+.form-select
+{
+  width: 200px;
+}
+.card
+{
+  padding: 5px;
+}
+
+.login-bar
+{
+  width: 100%;
+}
+</style>
+
+<body>
+    <div class="container-fluid">
+ 
+      <section class="h-10" style="background-color: #6c6d6d;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-8 col-xl-6">
+              <div class="card rounded-3">
+                <img src="css/1677408550480.jpg"
+                  class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"alt="Sample photo">
+                  <hr>
+
+                  <!-- heading collage detail  -->
+                      <h2 style="font-family: 'Gloock', serif; font-weight: 600;"> Collage details :</h2>
+                      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+                      <!-- first name  -->
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <div class="form-floating mb-3">
+                          <input type="fname" class="form-control" id="fname" placeholder="last name">
+                          <label for="fname">First name</label>
+                        </div>
+                      </div>
+
+                      <!-- last name  -->
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="lname" class="form-control" id="lname" placeholder="last name">
+                          <label for="lname">Last name</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- gender and Date of birth  -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="date" class="form-control" name="d/o/b" placeholder="Date of Birth">
+                          <label for="date">Date of Birth</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <select class="form-select mb-3" aria-label="Default select example" name="gender">
+                          <option selected>Gender</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Other</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <!-- exam roll  and batch -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" name="Exam-roll" placeholder="Exam-roll" maxlength="9" size="9">
+                          <label for="floatingInput">Exam-Roll</label>
+                        </div>
+                        </div>
+                      <div class="col-md-6">
+                        <select class="form-select mb-3" aria-label="Default select example">
+                          <option selected>BATCH</option>
+                          <option value="2020-23">2020-23</option>
+                          <option value="2020-23">2021-24</option>
+                          <option value="2020-23">2022-25</option>
+
+                        </select>
+                        </div>
+                    </div>
+                    
+
+                    <!-- department and semester  -->
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <select class="form-select mb-3" aria-label="Default select example">
+                          <option selected>Department</option>
+                          <option value="1">BCA-CA</option>
+                          <option value="2">BCA-IT</option>
+                          <option value="3">Others</option>
+                        </select>
+                        </div>
+                      <div class="col-md-6">
+                        <select class="form-select mb-3" aria-label="Default select example">
+                          <option selected>Current Semester</option>
+                          <option value="1">I</option>
+                          <option value="2">II</option>
+                          <option value="3">III</option>
+                          <option value="3">IV</option>
+                          <option value="3">V</option>
+                          <option value="3">VI</option>
+                          </select>
+                        </div>
+                    </div>
+                    <br>
+                        
+
+                       
+                          <!-- login information  -->
+                        <h2 style="font-family: 'Gloock', serif; font-weight: 600;">Login details :</h2>
+                        <hr style="height:2px;border-width:0;color:#000;background-color:gray">
+                 
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control login-bar" id="floatingInput" placeholder="Email address">
+                          <label for="email">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="tel" class="form-control login-bar" id="floatingInput" placeholder="Phone number"  pattern="[0-9]{4}-[0-9]{4}">
+                          <label for="phone">Phone number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control login-bar" id="floatingPassword" placeholder="Password"  minlength="4" maxlength="8" size="10">
+                          <label for="floatingPassword">Password <small>{ must be upto 8 Character }</small></label>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control login-bar" id="floatingPassword" placeholder="Confirm Password"  minlength="4" maxlength="8" size="10">
+                          <label for="cpassword">Confirm Password  <small>{ Entered Same Password }</small></label>
+                        </div>
+                      
+                        <button type="button" class="btn btn-primary">Submit</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+    </div>
+    
+</body>
+</html>
